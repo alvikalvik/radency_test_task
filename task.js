@@ -47,7 +47,7 @@ const chooseBestDistance = (t, k, ls) => {
     const sortedDistancesSumsArr = distancesSumsArr.sort( (a, b) => b - a);    
     
     for (let i = 0; i < sortedDistancesSumsArr.length; i++) {
-        if (sortedDistancesSumsArr[i] < t) {
+        if (sortedDistancesSumsArr[i] <= t) {
             return sortedDistancesSumsArr[i];
         }        
     }
